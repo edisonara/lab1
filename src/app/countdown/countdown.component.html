@@ -1,0 +1,9 @@
+<!-- countdown.component.html -->
+<div class="countdown-container">
+  <h2>Contador: {{ counter }}</h2>
+  <div class="input-container">
+    <label for="startTimeInput">Establecer tiempo inicial (segundos):</label>
+    <input id="startTimeInput" type="number" [(ngModel)]="startTime" min="1" />
+  </div>
+  <button #resetButton (click)="reiniciarContador()">Reiniciar Contador</button>
+</div>
